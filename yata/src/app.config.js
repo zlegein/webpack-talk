@@ -1,6 +1,10 @@
-routing.$inject = ['$urlRouterProvider', '$locationProvider'];
+routing.$inject = ['$urlRouterProvider', '$httpProvider', '$locationProvider'];
 
-export default function routing($urlRouterProvider, $locationProvider) {
-  $locationProvider.html5Mode(true);
+export default function routing($urlRouterProvider, $httpProvider, $locationProvider) {
+  $locationProvider.html5Mode({
+    enabled: true,
+    requireBase: false
+  });
+  $httpProvider.useApplyAsync(true);
   $urlRouterProvider.otherwise('/');
 }
