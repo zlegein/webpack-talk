@@ -1,7 +1,8 @@
-//import './tide.css';
+import './tide.css';
 
 import angular from 'angular';
 import uirouter from 'angular-ui-router';
+
 
 import routing from './tide.routes';
 import TideController from './tide.controller';

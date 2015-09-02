@@ -1,0 +1,22 @@
+[
+    "index.md",
+    {
+        "attr": {
+            "data-background": "images/webpack-module.png"
+        }
+    },
+    "webpack/intro.md",
+    "webpack/webpack1.md",
+    "features",
+    [
+      "streaming"
+      "plugins"
+      "loaders"
+      "output"
+      "devtool"
+      "devserver"
+      "code splitting"
+      "hot module replacement"
+    ]
+    "outtahere.md"
+]
