@@ -12,9 +12,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
         <link rel="stylesheet" href="bower_components/reveal.js/css/reveal.min.css">
-    
+
         <link rel="stylesheet" href="css/theme.css" id="theme">
-    
+
 
         <!-- For syntax highlighting -->
         <link rel="stylesheet" href="bower_components/reveal-highlight-themes/styles/zenburn.css" id="highlight-theme">
@@ -44,14 +44,6 @@
                 
                     
                         
-    <section data-background="images/thunderdome01.jpg" ></section>
-
-
-                    
-                    
-                
-                    
-                        
     <section data-markdown="slides/index.md"></section>
 
 
@@ -60,7 +52,7 @@
                 
                     
                         
-    <section data-background="images/leg.jpg" data-background-size="500px" ></section>
+    <section data-background="images/webpack-module.png" data-background-size="700px" data-background-color="white" ></section>
 
 
                     
@@ -68,172 +60,97 @@
                 
                     
                         
-    <section data-markdown="slides/break.md"></section>
-
-
-                    
-                    
-                
-                    
-                        
-    <section data-markdown="slides/how-did.md"></section>
-
-
-                    
-                    
-                
-                    
-                        
-    <section data-background="images/javascript.png" ></section>
-
-
-                    
-                    
-                
-                    
-                        
-    <section data-background="images/javascript1.png" ></section>
-
-
-                    
-                    
-                
-                    
-                    
-                        <section>
-                            
-                                
-    <section data-markdown="slides/grunt/intro.md"></section>
-
-
-                            
-                                
-    <section data-markdown="slides/grunt/what-is1.md"></section>
-
-
-                            
-                                
-    <section data-markdown="slides/grunt/what-is2.md"></section>
-
-
-                            
-                                
-    <section data-markdown="slides/grunt/what-is3.md"></section>
-
-
-                            
-                                
-    <section data-markdown="slides/grunt/what-is4.md"></section>
-
-
-                            
-                                
-    <section data-markdown="slides/grunt/what-is5.md"></section>
-
-
-                            
-                        </section>
-                    
-                
-                    
-                    
-                        <section>
-                            
-                                
-    <section data-markdown="slides/gulp/intro.md"></section>
-
-
-                            
-                                
-    <section data-markdown="slides/gulp/what-is1.md"></section>
-
-
-                            
-                                
-    <section data-markdown="slides/gulp/what-is2.md"></section>
-
-
-                            
-                                
-    <section data-markdown="slides/gulp/what-is3.md"></section>
-
-
-                            
-                                
-    <section data-markdown="slides/gulp/what-is4.md"></section>
-
-
-                            
-                                
-    <section data-markdown="slides/gulp/what-is5.md"></section>
-
-
-                            
-                        </section>
-                    
-                
-                    
-                    
-                        <section>
-                            
-                                
-    <section data-markdown="slides/npm/intro.md"></section>
-
-
-                            
-                                
-    <section data-markdown="slides/npm/what-is1.md"></section>
-
-
-                            
-                                
-    <section data-background="images/npm1.png" ></section>
-
-
-                            
-                                
-    <section data-background="images/npm2.jpg" ></section>
-
-
-                            
-                                
-    <section data-markdown="slides/npm/what-is3.md"></section>
-
-
-                            
-                        </section>
-                    
-                
-                    
-                    
-                        <section>
-                            
-                                
     <section data-markdown="slides/webpack/intro.md"></section>
 
 
-                            
-                                
+                    
+                    
+                
+                    
+                        
     <section data-markdown="slides/webpack/webpack1.md"></section>
 
 
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="slides/features"></section>
+
+
+                    
+                    
+                
+                    
+                    
+                        <section>
                             
                                 
-    <section data-markdown="slides/webpack/webpack2.md"></section>
+    <section data-markdown="slides/basic config"></section>
 
 
                             
                                 
-    <section data-markdown="slides/webpack/webpack3.md"></section>
+    <section data-markdown="slides/plugins"></section>
 
 
                             
                                 
-    <section data-markdown="slides/webpack/webpack4.md"></section>
+    <section data-markdown="slides/loaders"></section>
+
+
+                            
+                                
+    <section data-markdown="slides/output"></section>
+
+
+                            
+                                
+    <section data-markdown="slides/devtool"></section>
+
+
+                            
+                                
+    <section data-markdown="slides/devserver"></section>
+
+
+                            
+                                
+    <section data-markdown="slides/code splitting"></section>
+
+
+                            
+                                
+    <section data-markdown="slides/hot module replacement"></section>
 
 
                             
                         </section>
+                    
+                
+                    
+                        
+    <section data-markdown="slides/define problem"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="slides/show demo"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="slides/jspm"></section>
+
+
+                    
                     
                 
                     
@@ -268,7 +185,12 @@
                     { src: 'bower_components/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
                     { src: 'bower_components/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
                     { src: 'bower_components/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                    { src: 'bower_components/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'bower_components/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() {
+                        [].forEach.call( document.querySelectorAll( '.highlight' ), function( v, i) {
+                            hljs.highlightBlock(v);
+                        });
+                        }
+                    },
                     { src: 'bower_components/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
                     { src: 'bower_components/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
                     // { src: 'bower_components/reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }

@@ -12,3 +12,8 @@ https://github.com/lookfirst/systemjs-seed/blob/master/src/app/app.js
 https://github.com/swimlane/angular-systemjs-seed
 
 http://christianalfoni.github.io/react-webpack-cookbook/index.html
+
+
+http://www.uxebu.com/blog/2014/09/getting-started-webpack/
+
+https://github.com/HenrikJoreteg/hjs-webpack

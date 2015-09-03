@@ -1,8 +1,8 @@
 
 ### Intro to Webpack
-#### Guide Rails for Your Code
+#### playing nice in the sandbox
 ###### Zach Legein
-Senior Consultant @objectpartners
+Developer @objectpartners
 
 @zlegein
 

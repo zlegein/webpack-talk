@@ -2,21 +2,26 @@
     "index.md",
     {
         "attr": {
-            "data-background": "images/webpack-module.png"
+            "data-background": "images/webpack-module.png",
+            "data-background-size": "700px",
+            "data-background-color": "white"
         }
     },
     "webpack/intro.md",
     "webpack/webpack1.md",
     "features",
     [
-      "streaming"
-      "plugins"
-      "loaders"
-      "output"
-      "devtool"
-      "devserver"
-      "code splitting"
+      "basic config",
+      "plugins",
+      "loaders",
+      "output",
+      "devtool",
+      "devserver",
+      "code splitting",
       "hot module replacement"
-    ]
+    ],
+    "define problem",
+    "show demo",
+    "jspm",
     "outtahere.md"
 ]
