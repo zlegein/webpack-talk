@@ -1,4 +1,4 @@
-export default class HomeController {
+export default class NameController {
   constructor(randomNames) {
     this.random = randomNames;
     this.name = 'World';
@@ -13,4 +13,4 @@ export default class HomeController {
   }
 }
 
-HomeController.$inject = ['randomNames'];
+NameController.$inject = ['randomNames'];

@@ -2,7 +2,7 @@ import angular from 'angular';
 
 class RandomNames {
   constructor() {
-    this.names = ['brady', 'Elisa', 'Mark', 'Annie'];
+    this.names = ['Brady', 'Elisa', 'Mark', 'Annie'];
   }
 
   getName() {
