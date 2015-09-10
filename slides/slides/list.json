@@ -7,8 +7,9 @@
             "data-background-color": "white"
         }
     },
-    "webpack/intro.md",
-    "webpack/webpack1.md",
+    "webpack/what.md",
+    "webpack/why.md",
+    "webpack/highlight1.md",
     "features",
     [
       "basic config",

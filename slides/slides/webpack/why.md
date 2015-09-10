@@ -1,28 +1,51 @@
-### Why Webpack
+<section>
+    <pre class="stretch highlight cpp">
+        <span class="fragment fade-in" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;" data-fragment-index="0">
+           \_\_\_\_\_\_\_\_\_\_\_\_\_
+          |    SPA      |
+          |             |
+          |             |
+          |             |
+          |             |
+          |             |
+          |\_\_\_\_\_\_\_\_\_\_\_\_\_|
+        </span>
+        <span class="fragment fade-in" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;" data-fragment-index="1">
+           \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+          |      SPA       |
+          |                |
+          |                |
+          |                |
+          |                |
+          |                |
+          |\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_|
+        </span>
 
-Concatenating all your JS into 1 file is the wrong approach.
-Larger the SPA the bigger this file is going to be.
-
-Only download the JS you need for each "Page"
-Page == Entrypoint
-
-Each page should not download shared libraries again.
-
-Each entrypoint in your app should only download what it needs
-
-Module System - a way of expressing dependencies between modules
-
-Modules have a fine grain dependency graph
-
-allows for optimizing bundles
-
-gulp and grunt work great on files, suck for modules
-
-work with aschronous syntax and out of the box
-
-forces you to architect around a dependency graph of modules rather than flat files
-
-browserify - makes one giant js file
-
-requirejs - issues to many http request, no notion of multiple entry points
+        <span class="fragment fade-in" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;" data-fragment-index="2">
+           \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+          |         SPA           |
+          |                       |
+          |                       |
+          |                       |
+          |                       |
+          |                       |
+          |                       |
+          |                       |
+          |                       |
+          |                       |
+          |\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_|
+        </span>
+    </pre>
+    <aside class="notes">
+        -SPA came about because we wanted a way to modify the data on the page
+        without modifing the page itself.<br>
+        -Great load it up and zip around the app.<br>
+        -Quickly realizing that these apps are really bloated.<br>
+        -Finding out that concatenating all your JS into 1 file is the wrong approach.<br>
+        -Larger the SPA the bigger this file is going to be.<br>
+        -Only download the JS you need for each page.<br>
+        -Forces you to architect around a dependency graph of modules rather than flat files.<br>
+        -Little bit smarter about throwing everything in the boat.
+   </aside>
+</section>
 
