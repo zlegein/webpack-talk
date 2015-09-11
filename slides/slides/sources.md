@@ -17,3 +17,9 @@ http://christianalfoni.github.io/react-webpack-cookbook/index.html
 http://www.uxebu.com/blog/2014/09/getting-started-webpack/
 
 https://github.com/HenrikJoreteg/hjs-webpack
+
+http://survivejs.com/webpack_react/introduction/
+
+https://github.com/ShMcK/WebpackAngularDemos
+
+http://www.christianalfoni.com/articles/2015_04_19_The-ultimate-webpack-setup
