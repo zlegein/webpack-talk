@@ -2,7 +2,6 @@ import angular from 'angular';
 
 export default class CitySearchService {
 
-  /** @ngInject */
   constructor($http) {
     this.$http = $http;
   }
@@ -21,6 +20,8 @@ export default class CitySearchService {
 
   }
 }
+
+CitySearchService.$inject = ['$http'];
 
 export default angular.module('services.citySearch', [])
   .service('citySearchService', CitySearchService)

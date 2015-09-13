@@ -2,7 +2,6 @@ import angular from 'angular';
 
 export default class TideLookupService {
 
-  /** @ngInject */
   constructor($http, $log, ApiKey) {
     this.$http = $http;
     this.$log = $log;
@@ -25,6 +24,8 @@ export default class TideLookupService {
         .catch(error => this.$log.error('XHR Failed for getTides.\n' + angular.toJson(error.data, true)))
   }
 }
+
+TideLookupService.$inject = ['$http', '$log', 'ApiKey'];
 
 export default angular.module('services.tideLookup', [])
   .service('tideLookupService', TideLookupService)

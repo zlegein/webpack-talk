@@ -1,6 +1,5 @@
 export default class TideController {
 
-  /** @ngInject */
   constructor(citySearchService, tideLookupService) {
     this.citySearchService = citySearchService;
     this.data = tideLookupService;
@@ -17,3 +16,5 @@ export default class TideController {
   };
 
 }
+
+TideController.$inject = ['citySearchService', 'tideLookupService'];
