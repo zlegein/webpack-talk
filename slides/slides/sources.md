@@ -23,3 +23,7 @@ http://survivejs.com/webpack_react/introduction/
 https://github.com/ShMcK/WebpackAngularDemos
 
 http://www.christianalfoni.com/articles/2015_04_19_The-ultimate-webpack-setup
+
+http://jlongster.com/Backend-Apps-with-Webpack--Part-I
+
+https://medium.com/@dtothefp/why-can-t-anyone-write-a-simple-webpack-tutorial-d0b075db35ed

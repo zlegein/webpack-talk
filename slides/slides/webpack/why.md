@@ -1,4 +1,5 @@
 <section>
+    <p>Today’s websites are evolving into web apps</p>
     <pre class="stretch highlight cpp">
         <span class="fragment fade-in" style="position:absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;" data-fragment-index="0">
            \_\_\_\_\_\_\_\_\_\_\_\_\_
@@ -35,6 +36,7 @@
           |                       |
           |\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_|
         </span>
+
     </pre>
     <aside class="notes">
         -SPA came about because we wanted a way to modify the data on the page

@@ -1,16 +1,27 @@
 <section>
-    <pre class="stretch highlight cpp">
-    <p>webpack.config.js</p>
+    <pre class="">
+
+        <span class="fragment">$ npm install webpack --save-dev</span>
+
+        <span class="fragment">
+        $ webpack --config webpack.config.js
+
         module.exports = {
-               <span class="fragment zoom-in highlight-current-green">entry: "./entry.js",</span>
-               output: {
-                   path: __dirname,
-                   filename: "bundle.js"
-               }
-           };
+            // configuration
+        };
+        </span>
+        <span class="fragment">
+        var webpack = require("webpack");
+
+        webpack({
+            // configuration
+        });
+         </span>
     </pre>
+
     <aside class="notes">
-        -Just like grunt and gulp we define a main config file. Configuration can be plain old javascript objects.
-        -Lots of configuration options. way more than we will go over.
+        -just like grunt and gulp we need to feed webpack the configuration options<br/>
+        -this can be done via the cli, by specifying the file with the config option<br/>
+        -use nodejs api and pass the config object as a param<br/>
     </aside>
 </section>
