@@ -17,6 +17,10 @@
     "webpack/dev-server1.md",
     "webpack/dev-server2.md",
     "webpack/dev-server3.md",
+    "webpack/dev-server4.md",
+    "webpack/devtools.md",
+    "webpack/dev-server5.md",
+    "webpack/dev-server6.md",
     "features",
     [
       "basic config",

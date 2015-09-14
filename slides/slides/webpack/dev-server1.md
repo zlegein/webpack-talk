@@ -7,7 +7,7 @@
         <span class="fragment">
         {
           "scripts": {
-            "dev": "webpack-dev-server --content-base build"
+            "dev": "webpack-dev-server --port 9000"
           }
         }
         </span>
