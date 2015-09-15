@@ -27,3 +27,24 @@ http://www.christianalfoni.com/articles/2015_04_19_The-ultimate-webpack-setup
 http://jlongster.com/Backend-Apps-with-Webpack--Part-I
 
 https://medium.com/@dtothefp/why-can-t-anyone-write-a-simple-webpack-tutorial-d0b075db35ed
+
+http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/
+
+https://github.com/survivejs/webpack_react/issues/204
+
+http://webpack.github.io/docs/hot-module-replacement.html
+
+http://webpack.github.io/docs/hot-module-replacement-with-webpack.html
+
+https://github.com/webpack/webpack-dev-server/pull/127
+
+http://jmfurlott.com/setting-up-react-hot-loader/
+http://survivejs.com/webpack_react/developing_with_webpack/
+http://webpack.github.io/docs/webpack-dev-server.html
+https://github.com/postcss/autoprefixer
+http://webpack.github.io/docs/using-loaders.html
+https://github.com/christianalfoni/react-webpack-cookbook/wiki/Loading-CSS
+https://github.com/webpack/extract-text-webpack-plugin
+https://github.com/webpack/css-loader
+https://medium.com/seek-ui-engineering/the-end-of-global-css-90d2a4a06284
+http://webpack.github.io/docs/configuration.html

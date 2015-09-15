@@ -1,6 +1,6 @@
 <section>
+    <h5>webpack.config.js continued</h5>
     <pre class="stretch highlight cpp">
-    <p>webpack.config.js continued</p>
         module.exports = {
             context: \_\_dirname + "/app",
             entry: {
@@ -18,8 +18,8 @@
         };
     </pre>
     <aside class="notes">
-        -loaders: basically you are requiring everything.
-        -can be chained
+        -loaders: basically allow you to require everything.(css, html, images)
+        -works like gulp where loaders can be chained.
 
     </aside>
 </section>

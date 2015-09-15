@@ -1,6 +1,7 @@
 <section>
-    <pre class="">
-
+    <h5>Plugins</h5>
+    <pre>
+        <span class="fragment">$ npm install xxx-plugin --save-dev</span>
         <span class="fragment">
         var webpack = require('webpack');
         module.exports = {
@@ -33,8 +34,10 @@
     </pre>
 
     <aside class="notes">
-        -plugins provided added functionality to various transformation phases
-        -two types of plugins(built-in and others)
-        -why use plugin when you can use a loader?
+        -plugins provided added functionality to various transformation phases</br>
+        -two types of plugins(built-in and others)</br>
+        -whats the difference between a plugin and a loader?
+            - because there are things you want to do post transformation
+        QUESTIONS
     </aside>
 </section>
