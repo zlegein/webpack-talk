@@ -15,8 +15,8 @@
     </pre>
     <aside class="notes">
         -The last step here is to tell webpack to make requests to the dev-server, we do this by providing the full url
-        in the output.publicPath.
-        -this replaces the need for the client param when we added our dev server script to our bundle
+        in the output.publicPath.</br>
+        -this replaces the need for the client param when we added our dev server script to our bundle</br>
         -QUESTIONS
     </aside>
 </section>

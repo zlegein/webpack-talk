@@ -9,24 +9,24 @@
       }
     }
     </span>
-    <span class="fragment" data-fragment-index="2">
+    <span class="fragment" data-fragment-index="3">
     module.exports = {
         entry: {
-            app: [<span class="fragment zoom-in highlight-current-green" data-fragment-index="3">'webpack-dev-server/client?http//localhost:8080'</span>,
-                  <span class="fragment zoom-in highlight-current-green" data-fragment-index="5">'webpack/hot/dev-server'</span>,
+            app: [<span class="fragment zoom-in highlight-current-green" data-fragment-index="4">'webpack-dev-server/client?http//localhost:8080'</span>,
+                  <span class="fragment zoom-in highlight-current-green" data-fragment-index="6">'webpack/hot/dev-server'</span>,
                   './js/app.js'
             ]
         },
         plugins: [
-            <span class="fragment zoom-in highlight-current-green" data-fragment-index="4">new webpack.HotModuleReplacementPlugin()</span>
+            <span class="fragment zoom-in highlight-current-green" data-fragment-index="5">new webpack.HotModuleReplacementPlugin()</span>
         ]
     };
     </span>
     </pre>
     <aside class="notes">
-        - add --inline and you can remove the dev server script from your bundle
-        - add --hot and you can remove the HotModuleReplacementPlugin plugin, it will do this for you, and you don't want to add this twice
-        - add --hot and --inline and you can remove the hot loading script from your bundle
+        - add --inline and you can remove the dev server script from your bundle</br>
+        - add --hot and you can remove the HotModuleReplacementPlugin plugin, it will do this for you, and you don't want to add this twice</br>
+        - add --hot and --inline and you can remove the hot loading script from your bundle</br>
         QUESTIONS
     </aside>
 </section>

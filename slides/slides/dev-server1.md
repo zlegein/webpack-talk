@@ -17,7 +17,8 @@
         -development server that automatically refreshes content in the browser while you develop your application.</br>
         -equivalent to tools such as LiveReload or Browsersync</br>
         -You should not use the webpack-dev-server as a backend. Its only purpose is to serve static (webpacked) assets.</br>
-        -you can install globally and run separate from project, add it as an npm script for the project.</br>
+        -you can install globally and run separate from project</br>
+        -or add it as an npm script for the project.</br>
         QUESTIONS
     </aside>
 </section>
