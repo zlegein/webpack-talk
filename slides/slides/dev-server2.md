@@ -23,8 +23,8 @@
         -in order to get all the hot reloading fanciness working, this is what is needed</br>
         -add dev server script with the client it needs to talk to and the hot loading script to your bundle</br>
         -then add the HMR plugin as a plugin</br>
-        -you can instead add the dev server script in your index.html file or hit this url and have the dev server
-        serve your app in iframe mode.</br>
+        -you can instead add the dev server script in your index.html file</br>
+        -hit this url and have the dev server serve your app in iframe mode.</br>
         QUESTIONS
     </aside>
 </section>
