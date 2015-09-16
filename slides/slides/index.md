@@ -1,6 +1,5 @@
 
 ### Intro to Webpack
-#### playing nice in the sandbox
 ###### Zach Legein
 Developer @objectpartners
 

@@ -1,6 +1,6 @@
 <section>
-    <pre class="stretch highlight cpp">
     <p>webpack.config.js</p>
+    <pre class="stretch highlight cpp">
         module.exports = {
             <span class="fragment zoom-in highlight-current-green">context:</span> \_\_dirname + "/app",
             <span class="fragment zoom-in highlight-current-green">entry:</span> {

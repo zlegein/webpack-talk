@@ -1,53 +1,30 @@
-webpack is fed a configuration object. Depending on your usage of webpack there are two ways to pass this configuration object:
+<section>
+    <h5>Configs</h5>
+    <pre class="">
 
-two ways to load
+        <span class="fragment">$ npm install webpack --save-dev</span>
 
-cli - read from webpack.config.js file
+        <span class="fragment">
+        $ webpack --config webpack.config.js
 
-module.exports = {
-    // configuration
-};
+        module.exports = {
+            // configuration
+        };
+        </span>
+        <span class="fragment">
+        var webpack = require("webpack");
 
-Nodejs.api pass the config object as a parameter
+        webpack({
+            // configuration
+        });
+         </span>
+    </pre>
 
-webpack({
-    // configuration
-}, callback);
-
-
-doesn't need to be pure json, use any javascript you want
-
-
-entry - entry point for the bundle
-
-string - resolves to a module loaded upon startup
-
-array - all are loaded at startup the last is exported
-
-object - creates multiple entry bundles, chunks them by name
-
-{
-    entry: {
-        page1: "./page1",
-        page2: ["./entry1", "./entry2"]
-    },
-    output: {
-        // Make sure to use [name] or [id] in output.filename
-        //  when using multiple entry points
-        filename: "[name].bundle.js",
-        chunkFilename: "[id].bundle.js"
-    }
-}
-
-
-output - where you want bundles to go
-
-path - The output directory as absolute path
-
-publicPath - The output.path from the view of the Javascript / HTML page.
-
-css problem
-
-
-
-
+    <aside class="notes">
+        -lots of stuff going on behind these basic configs, handles a lot of the dirty work for you.
+        -however, if you want to get dirty, you can.
+        -just like grunt and gulp we need to feed webpack the configuration options<br/>
+        -this can be done via the cli, by specifying the file with the config option<br/>
+        -use nodejs api and pass the config object as a param<br/>
+    </aside>
+</section>

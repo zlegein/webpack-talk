@@ -1,5 +1,6 @@
 
 <section>
+<h5>Live Reloading Simplified</h5>
     <pre>
     <span class="fragment" data-fragment-index="1">
     {
@@ -23,7 +24,10 @@
     </span>
     </pre>
     <aside class="notes">
-        - try to update with HMR before trying to reload the whole page
+        - add --inline and you can remove the dev server script from your bundle
+        - add --hot and you can remove the HotModuleReplacementPlugin plugin, it will do this for you, and you don't want to add this twice
+        - add --hot and --inline and you can remove the hot loading script from your bundle
+        QUESTIONS
     </aside>
 </section>
 
