@@ -4,7 +4,7 @@
         module.exports = {
             <span class="fragment zoom-in highlight-current-green">context:</span> \_\_dirname + "/app",
             <span class="fragment zoom-in highlight-current-green">entry:</span> {
-                app: './src/app.js'
+                app: './app.js'
             }
             <span class="fragment zoom-in highlight-current-green">output:</span> {
                 path: __dirname, // absolute path

@@ -8,14 +8,14 @@
         require('!style!css!./file.css');
         </span>
         <span class="fragment">
-        $ webpack --module-bind jade --module-bind 'css=style!css'
+        $ webpack --module-bind 'css=style!css'
         </span>
         <span class="fragment">
         module.exports = {
           module: {
             loaders: [
               <span class="fragment zoom-in highlight-current-green">{ test: /\.css$/, loader: 'style!css' }</span>,
-              <span class="fragment zoom-in highlight-current-green">{ test: /\.png$/, loader: "url?limit=100000" }</span>,,
+              <span class="fragment zoom-in highlight-current-green">{ test: /\.png$/, loader: "url?limit=100000" }</span>,
               <span class="fragment zoom-in highlight-current-green">{ test: /\.html$/, loader: "raw" }</span>,
             ]
           }

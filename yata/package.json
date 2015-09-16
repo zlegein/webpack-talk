@@ -4,7 +4,7 @@
   "description": "A workflow for Angular made with Webpack",
   "scripts": {
     "build": "webpack --config webpack.build.js --bail -p",
-    "prod": "ws -d public",
+    "prod": "opener http://localhost:8000 && ws -d public",
     "dev": "webpack-dev-server --history-api-fallback --hot --inline --progress --port 9000",
     "test": "karma start",
     "test:live": "karma start --auto-watch --no-single-run"
@@ -51,6 +51,7 @@
     "local-web-server": "^0.5.23",
     "node-libs-browser": "^0.5.2",
     "null-loader": "^0.1.1",
+    "opener": "^1.4.1",
     "phantomjs": "^1.9.17",
     "postcss-loader": "^0.6.0",
     "raw-loader": "^0.5.1",

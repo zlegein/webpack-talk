@@ -3,13 +3,20 @@
     <h5>Source Maps</h5>
     <pre>
         <span class="fragment">
-        {
-            devtool: "eval"
-        }
+            module.exports = {
+                devtool: "eval"
+            }
         </span>
-        <span class="fragment">"@cheap-source-map"</span>
-        <span class="fragment">"#source-map"</span>
-
+        <span class="fragment">
+            module.exports = {
+                devtool: "@cheap-source-map"
+            }
+        </span>
+        <span class="fragment">
+            module.exports = {
+                devtool: "#source-map"
+            }
+        </span>
     </pre>
     <aside class="notes">
         -devtool config provides various methods of including source maps

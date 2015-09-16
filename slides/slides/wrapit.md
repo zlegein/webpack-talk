@@ -1,9 +1,9 @@
 <section>
     <h5>JSPM</h5>
-    <pre>
-        <span class="fragment">* Other option is JSPM
+    <li>Built on top of SystemJS, same as ES6</li>
+    <li>Handles management of third-party dependencies directly</li>
     <aside class="notes">
-        -built on top of systemJS, so handles es6 code cleaner
-        -deals with management of third-party dependencies directly (no need for npm install), reminds me of the maven days
+        -so handles es6 code cleaner
+        -no need for npm install, reminds me of the maven days
     </aside>
 </section>
