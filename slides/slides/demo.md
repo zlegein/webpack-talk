@@ -1,13 +1,15 @@
-
 <section>
-    <h3>Opinionated</h3>
-    <p class="fragment">assumes you need to move files from a source directory to a destination directory</p>
-    <p class="fragment">assumes you are working with javascript libraries in module formats (CommonJS, AMD, ES6)</p>
-    <p class="fragment">assumes you will want to use various transformers</p>
+    <h5>Story Time</h5>
     <aside class="notes">
-        -webpack can handle all of these formats but prefers CommonJS.
-        -it can also, handle both npm and bower packages, but highly prefers npm.
-        -NPM maintains its dependency graph which is more in-line with how webpack works
-        -vs Bower which removes the dependency graph entirely.
-        </aside>
+        -this is the unstructured part of the talk and what i would like to do is demo the app, show the HMR goodness
+        -then dive into the configs and go through some more advanced settings and have a look at the structure.
+        -Looking around, found webpack/angular/es6 workflow</br>
+        -created by Jesus Rodriquez, as a starter for projects.</br>
+        -there are a few others out there, but the landscape is moving fast and optimizations are happening constantly</br>
+        -what I like about this one is, it is well documented</br>
+        -deals with common prod deployment stuff as well as testing</br>
+        -reasons why i picked this setup
+        -currently working on angular project
+        -wanted to write some es6 code
+    </aside>
 </section>

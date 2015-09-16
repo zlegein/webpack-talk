@@ -20,8 +20,9 @@
     "dev-server2.md",
     "dev-server3.md",
     "dev-server4.md",
-    "dev-server5.md",
-    "dev-server6.md",
+    "hmr1.md",
+    "hmr2.md",
+    "demo.md",
     "wrapit.md",
     "outtahere.md"
 ]
