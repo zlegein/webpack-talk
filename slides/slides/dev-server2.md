@@ -1,23 +1,23 @@
 <section>
 <h5>Live Reloading</h5>
     <pre>
-    <span class="fragment">
-    module.exports = {
-        entry: {
-            <span class="fragment zoom-in highlight-current-green">app: ['webpack-dev-server/client?http//localhost:9000',
-                  'webpack/hot/dev-server',
-                  './js/app.js'
-            ]</span>
-        },
-        plugins: [
-            <span class="fragment zoom-in highlight-current-green">new webpack.HotModuleReplacementPlugin()</span>
-        ]
-    };
-    </span>
-    <span class="fragment">
-    &lt;script src="http://localhost:8080/webpack-dev-server.js"> &lt;/script&gt;
-    </span>
-    <span class="fragment">http://localhost:8080/webpack-dev-server</span>
+<span class="fragment">
+module.exports = {
+  entry: {
+    <span class="fragment zoom-in highlight-current-green">app: ['webpack-dev-server/client?http//localhost:9000',
+              'webpack/hot/dev-server',
+              './js/app.js'
+    ]</span>
+  },
+  plugins: [
+    <span class="fragment zoom-in highlight-current-green">new webpack.HotModuleReplacementPlugin()</span>
+  ]
+};
+</span>
+<span class="fragment">
+&lt;script src="http://localhost:8080/webpack-dev-server.js"> &lt;/script&gt;
+</span>
+<span class="fragment">http://localhost:8080/webpack-dev-server</span>
     </pre>
     <aside class="notes">
         -in order to get all the hot reloading fanciness working, this is what is needed</br>

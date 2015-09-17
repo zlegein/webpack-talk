@@ -8,10 +8,11 @@
         -grunt had its opinion on how you would deal with your client side code</br>
         -gulp thought this opinion wasn't entirely correct and removed all the opinions and let the developer decide</br>
         -webpack moves back to having an opinion on how we manage our code.</br>
-        -webpack can handle all of these formats unlike browserify which only deals with CommonJS</br>
+        -webpack can handle all of these formats unlike others that only handle one</br>
         -it can also, handle both npm and bower packages, but prefers npm and states this in the docs.</br>
         -NPM maintains its dependency graph which is more in-line with how webpack works</br>
         -vs Bower which removes the dependency graph entirely.</br>
+        -lastly, assumes you will want transformations</br>
         QUESTIONS
         </aside>
 </section>

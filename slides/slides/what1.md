@@ -1,6 +1,6 @@
 <section>
     <h3>Webpack</h3>
-    <p>Written by Tobias Koppers (github/sokra)</p>
+    <p>Main contributor is Tobias Koppers (github/sokra)</p>
     <span class="fragment fade-in">
         <i>webpack takes modules with dependencies and generates static assets representing those modules.</i>
     </span>
@@ -9,7 +9,7 @@
         -can completely replace grunt and gulp</br>
         -Webpack is an elaborate module bundling system that has hides a lot of power behind configuration</br>
         -Lots of configuration options, way more than we will go through today</br>
-        -Under active development, the docs are always behind the latest changes in the codebase</br>
+        -docs are behind the latest changes in the codebase</br>
         -Heavily used in the react.js ecosystem, facebook open source community would love to see FB hire him full time.</br>
         -Why do we need yet another build system</br>
     </aside>
