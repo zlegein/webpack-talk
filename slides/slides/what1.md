@@ -6,12 +6,9 @@
     </span>
     <aside class="notes">
         -it collects a variety of web assets and packs them into a bundle that can be served to the client</br>
-        -can completely replace grunt and gulp</br>
-        -Webpack is an elaborate module bundling system that has hides a lot of power behind configuration</br>
-        -Lots of configuration options, way more than we will go through today</br>
-        -docs are behind the latest changes in the codebase</br>
-        -Heavily used in the react.js ecosystem, facebook open source community would love to see FB hire him full time.</br>
-        -Why do we need yet another build system</br>
+        -can completely replace grunt and gulp or used in conjunction</br>
+        -lots of configuration options that can seemingly handle anything you throw at it</br>
+        -big ones are loaders and plugins and we are going to take a look at one of the plugins
     </aside>
 </section>
 
