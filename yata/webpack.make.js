@@ -2,8 +2,10 @@
 
 // Modules
 var webpack = require('webpack');
+var path = require('path');
 var autoprefixer = require('autoprefixer');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var ProvidePlugin = require('webpack/lib/ProvidePlugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = function makeWebpackConfig (options) {
@@ -28,13 +30,23 @@ module.exports = function makeWebpackConfig (options) {
      * Should be an empty object if it's generating a test build
      * Karma will set this when it's a test build
      */
-    if (TEST) {
-        config.entry = {}
-    } else {
-        config.entry = {
-            app: './src/app.js'
-        }
-    }
+//    if (TEST) {
+//        config.entry = {}
+//    } else {
+//        config.entry = {
+//            'app': './src/app.ts',
+//            'vendor': './src/vendor.ts'
+//        }
+//    }
+
+    config.entry = {
+        'app': './src/bootstrap.ts',
+        'vendor': './src/vendor.ts'
+    };
+    config.output = {
+        path: "./dist",
+        filename: "bundle.js"
+    };
 
     /**
      * Output
@@ -42,26 +54,26 @@ module.exports = function makeWebpackConfig (options) {
      * Should be an empty object if it's generating a test build
      * Karma will handle setting it up for you when it's a test build
      */
-    if (TEST) {
-        config.output = {}
-    } else {
-        config.output = {
-            // Absolute output directory
-            path: __dirname + '/public',
-
-            // Output path from the view of the page
-            // Uses webpack-dev-server in development
-            publicPath: BUILD ? '/' : 'http://localhost:9000/',
-
-            // Filename for entry points
-            // Only adds hash in build mode
-            filename: BUILD ? '[name].[hash].js' : '[name].bundle.js',
-
-            // Filename for non-entry points
-            // Only adds hash in build mode
-            chunkFilename: BUILD ? '[name].[hash].js' : '[name].bundle.js'
-        }
-    }
+//    if (TEST) {
+//        config.output = {}
+//    } else {
+//        config.output = {
+//            // Absolute output directory
+//            path: __dirname + '/public',
+//
+//            // Output path from the view of the page
+//            // Uses webpack-dev-server in development
+//            publicPath: BUILD ? '/' : 'http://localhost:9000/',
+//
+//            // Filename for entry points
+//            // Only adds hash in build mode
+//            filename: BUILD ? '[name].[hash].js' : '[name].bundle.js',
+//
+//            // Filename for non-entry points
+//            // Only adds hash in build mode
+//            chunkFilename: BUILD ? '[name].[hash].js' : '[name].bundle.js'
+//        }
+//    }
 
     /**
      * Devtool
@@ -76,6 +88,10 @@ module.exports = function makeWebpackConfig (options) {
         config.devtool = 'eval';
     }
 
+    config.resolve = {
+        extensions: ['', '.ts', '.js']
+    };
+
     /**
      * Loaders
      * Reference: http://webpack.github.io/docs/configuration.html#module-loaders
@@ -85,15 +101,15 @@ module.exports = function makeWebpackConfig (options) {
 
         // Initialize module
     config.module = {
+        noParse: [path.join(__dirname, 'node_modules', 'angular2', 'bundles')],
         preLoaders: [],
         loaders: [{
             // JS LOADER
             // Reference: https://github.com/babel/babel-loader
             // Transpile .js files using babel-loader
             // Compiles ES6 and ES7 into ES5 code
-            test: /\.js$/,
-            loader: 'babel?optional[]=runtime&stage=1',
-            exclude: /node_modules/
+            test: /\.ts/,
+            loader: 'ts-loader'
         }, {
             // ASSET LOADER
             // Reference: https://github.com/webpack/file-loader
@@ -109,6 +125,9 @@ module.exports = function makeWebpackConfig (options) {
             // Allow loading html through js
             test: /\.html$/,
             loader: 'raw'
+        }, {
+            test: /bootstrap\/dist\/js\/umd\//,
+            loader: 'imports?jQuery=jquery'
         }]
     };
 
@@ -135,11 +154,6 @@ module.exports = function makeWebpackConfig (options) {
     // Postprocess your css with PostCSS plugins
     var cssLoader = {
         test: /\.css$/,
-        // Reference: https://github.com/webpack/extract-text-webpack-plugin
-        // Extract css files in production builds
-        //
-        // Reference: https://github.com/webpack/style-loader
-        // Use style-loader in development for hot-loading
         loader: ExtractTextPlugin.extract('style', 'css?sourceMap!postcss')
     };
 
@@ -170,11 +184,18 @@ module.exports = function makeWebpackConfig (options) {
      * List: http://webpack.github.io/docs/list-of-plugins.html
      */
     config.plugins = [
+        new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.bundle.js'),
+        new ExtractTextPlugin('bundle.css'),
         // Reference: https://github.com/webpack/extract-text-webpack-plugin
         // Extract css files
         // Disabled when in test mode or not in build mode
         new ExtractTextPlugin('[name].[hash].css', {
             disable: !BUILD || TEST
+        }),
+        new ProvidePlugin({
+            jQuery: 'jquery',
+            $: 'jquery',
+            jquery: 'jquery'
         })
     ];
 
@@ -186,7 +207,7 @@ module.exports = function makeWebpackConfig (options) {
             new HtmlWebpackPlugin({
                 template: './src/index.html',
                 inject: 'body',
-                minify: BUILD
+                minify: false
             })
         )
     }
@@ -200,11 +221,11 @@ module.exports = function makeWebpackConfig (options) {
 
             // Reference: http://webpack.github.io/docs/list-of-plugins.html#dedupeplugin
             // Dedupe modules in the output
-            new webpack.optimize.DedupePlugin(),
+            new webpack.optimize.DedupePlugin()
 
             // Reference: http://webpack.github.io/docs/list-of-plugins.html#uglifyjsplugin
             // Minify all javascript, switch loaders to minimizing mode
-            new webpack.optimize.UglifyJsPlugin()
+//            new webpack.optimize.UglifyJsPlugin()
         )
     }
 
@@ -214,7 +235,8 @@ module.exports = function makeWebpackConfig (options) {
      * Reference: http://webpack.github.io/docs/webpack-dev-server.html
      */
     config.devServer = {
-        contentBase: './public',
+        historyApiFallback: true,
+        contentBase: './src',
         stats: {
             modules: true,
             cached: true,

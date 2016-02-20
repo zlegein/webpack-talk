@@ -9,10 +9,6 @@
     <span>   |   </span>
     <span class="fragment zoom-in highlight-current-green" data-fragment-index="2">Module C</span>
     </div>
-    <ul>
-    <li class="fragment" data-fragment-index="5"><i>style-loader</i> has implemented this feature</li>
-    <li class="fragment" data-fragment-index="6" style="color:orange;">This is an experimental feature</li>
-    </ul>
     </pre>
     <aside class="notes">
         -Module A is a hot module, meaning it communicates with the HMR runtime about updated modules.</br>
