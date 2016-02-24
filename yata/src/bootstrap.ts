@@ -6,7 +6,6 @@ import {ROUTER_PROVIDERS} from 'angular2/router';
 import {YataApp} from './app/yata-app';
 
 import 'jquery';
-import 'lodash';
 import 'bootstrap';
 import 'bootstrap-material-design';
 

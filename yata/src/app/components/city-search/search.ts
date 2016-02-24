@@ -22,7 +22,7 @@ import {Http} from "angular2/http";
 })
 export class CitySearch {
     @Output('selected') selected = new EventEmitter();
-    clear = new EventEmitter();
+    //clear = new EventEmitter();
     searchText = new Control();
     cities: Observable<any[]>;
     citySearchService:CitySearchService;
@@ -38,14 +38,14 @@ export class CitySearch {
             // observable. That means unsubscribing from any previous HTTP request
             // (cancelling it), and subscribing to the newly returned one here.
             .switchMap((val:string) => citySearchService.getCityInfo(val))
-            .merge(this.clear.mapTo([]));
+            //.merge(this.clear.mapTo([]));
 
 
     }
 
     onSelect(city){
         this.selected.emit(city);
-        this.clear.emit('')
+        //this.clear.emit('')
     }
 
 }

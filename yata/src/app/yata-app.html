@@ -1,6 +1,9 @@
 <div class="yata-app">
     <div class="container">
-        <typeahead (selected)="onSelect($event)"></typeahead>
+        <city-search (selected)="onSelect($event)"></city-search>
+    </div>
+    <div class="container">
+        <tides [tide]="tide"></tides>
     </div>
 </div>
 
