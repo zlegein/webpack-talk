@@ -7,9 +7,24 @@
             "data-background-color": "white"
         }
     },
+    "agenda.md",
     "what1.md",
+    "why.md",
+    "what2.md",
+    "config1.md",
+    "config2.md",
+    "config3.md",
+    "config4.md",
+    "config5.md",
+    "config6.md",
+    "devtools.md",
+    "dev-server1.md",
+    "dev-server2.md",
+    "dev-server3.md",
+    "dev-server4.md",
     "hmr1.md",
     "hmr2.md",
     "hmr3.md",
+    "demo.md",
     "outtahere.md"
 ]

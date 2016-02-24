@@ -1,1 +1,1 @@
-Well, that's all.
+Well, that's all. Thanks for hanging out!

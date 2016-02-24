@@ -25,7 +25,9 @@ module.exports = {
     </pre>
 
     <aside class="notes">
+        -loaders: allow you to preprocess files as you require() or “load” them.</br>
         -loaders: basically allow you to require everything.(css, html, images)</br>
+        -loaders: can transform files from different languages(Typescript to Javascript)(es6 to es5)</br>
         -works like gulp where loaders can be chained.</br>
         SETUP</br>
         -specify in require statement. separating loaders with bang</br>
