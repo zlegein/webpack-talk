@@ -23,6 +23,5 @@ webpack({
         -this can be done via the cli, by specifying the file with the config option<br/>
         -use nodejs api and pass the config object as a param<br/>
         -**the configurations for webpack are just a plain old javascript object</br>
-        QUESTIONS
     </aside>
 </section>

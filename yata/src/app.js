@@ -10,4 +10,3 @@ import name from './features/name';
 
 angular.module('app', [uirouter, uibootstrap, name, tide])
   .config(routing);
-

@@ -48,3 +48,7 @@ https://github.com/webpack/extract-text-webpack-plugin
 https://github.com/webpack/css-loader
 https://medium.com/seek-ui-engineering/the-end-of-global-css-90d2a4a06284
 http://webpack.github.io/docs/configuration.html
+
+https://medium.com/modus-create-front-end-development/webpack-2-tree-shaking-configuration-9f1de90f3233#.vzlqy1cah
+
+https://github.com/preboot/angular-webpack

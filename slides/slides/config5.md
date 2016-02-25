@@ -21,7 +21,7 @@ module.exports = {
         -whats the difference between a plugin and a loader?</br>
             -- there are things you want to do post transformation</br>
             -- there are things you want to augment during the loader life cycle</br>
-        -Uglify is an example of a plugin you would want to use only after all the loaders have completed transformations.</br>
+        -Here is an example of the uglify plugin where you would only want to use after all the loaders have completed transformations.</br>
         QUESTIONS
     </aside>
 </section>

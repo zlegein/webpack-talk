@@ -1,8 +1,7 @@
 
-### Webpack
-##### Hot Module Replacement
+##### Intro to Webpack
 ###### Zach Legein
-Web Solutions Engineer @objectpartners
+Web Solutions Consultant @objectpartners
 
 @zlegein
 

@@ -15,11 +15,11 @@
     </ul>
     </pre>
     <aside class="notes">
-        -Module A is a hot module, meaning it communicates with the HMR runtime about updated modules.</br>
-        -Module C is updated, parent is module B which isn't hot, then B and C are now outdated</br>
-        -Module A CAN handle the update, so new Module B and C are injected</br>
+        -Three modules C->B->A, where A is the hot module, meaning it communicates with the HMR runtime about updated modules</br>
+        -Module C is updated, it will ask B if it can handle the update. It can't, so both are outdated</br>
+        -Module A IS hot and CAN handle the update, so new Module B and C are injected</br>
         -If it gets all the way to the entry module then it will reload the whole page.</br>
-
+        -Style Loader</br>
         -QUESTIONS
     </aside>
 </section>

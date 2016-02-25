@@ -43,10 +43,11 @@
     </pre>
     <aside class="notes">
         -SPA came about because we wanted a way of manipulating the data on a page without the overhead of reloading the whole page.<br>
-        -More and more javascript powering these webapps and the challenge now is trying to keep our code organized and performant</br>
-        -This is where concatenating all this javascript into one bloated file is not the right approach. gulp and grunt</br>
-        -One of the best ways to keep this code organized is to break it up into modules</br>
-        -And it forces you to architect around a dependency graph of modules rather than flat files.<br>
+        -took a lot of best practices from the server side and introduced them to the client side and used tools like gulp and grunt to deal with the dev ops side of front end development</br>
+        -that worked well, but as these SPA's grew we were throwing more and more client side code and resources into them</br>
+        -we ended up with the foamy latte problem</br>
+        -in order to combat the foamy latte problem we need to move away from concatenating everyting into these monolithic bloated files</br>
+        -And start breaking these up into more palatable modules that forces you to architect around a dependency graph of modules rather than flat files</br>
    </aside>
 </section>
 

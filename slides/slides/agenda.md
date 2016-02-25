@@ -1,15 +1,9 @@
-<section>
-    <h3>Game Plan</h3>
-    <p class="fragment">What is Webpack</p>
-    <p class="fragment">Why you would use it</p>
-    <p class="fragment">How do you use it</p>
-    <p class="fragment">Check it out in action</p>
-    <aside class="notes">
-        - what do you do with it
-        - why would you use it
-        - how do you use it
-        - go through the outputs and what now
-        </aside>
-</section>
-
-
+### Agenda
+##### What
+    -what is webpack and where did it come from
+##### Why
+    -yet another build tool? -comparisons
+##### Configs
+    -loaders, -plugins, -dev-server, -HMR -webpack2
+##### Code Examples
+    -look at output -errors -live reloading -look at the running config file

@@ -1,24 +1,22 @@
 <section>
-    <h5>Loader Order</h5>
-
-   <li>preloaders specified in the configuration</li>
-   <li>loaders specified in the configuration</li>
-   <li>loaders specified in the request</li> (e.g. require('raw!./file.js'))
-   <li>postLoaders specified in the configuration</li>
-    <p>loader overrides</p>
-       <li>adding ! to a request will disable configured preLoaders
-           require("!raw!./script.coffee")</li>
-       <li>adding !! to a request will disable all loaders specified in the configuration
-           require("!!raw!./script.coffee")</li>
-       <li>adding -! to a request will disable configured preLoaders and loaders but not the postLoaders
-            require("-!raw!./script.coffee")</li>
+    <h5>Loaders</h5>
+    <div class="fragment">allows you to preprocess files as you require() or “load” them.</div>
+    <p></p>
+    <div class="fragment">loaders allow you to require everything(css, html, images)</div>
+    <p></p>
+    <div class="fragment">can transform files from different languages(Typescript to Javascript)(es6 to es5)</div>
+    <p></p>
+    <div class="fragment">loaders can be chained</div>
+    <p></p>
+    <div class="fragment">provides preloaders and postloaders</div>
     <aside class="notes">
-        -loaders: basically allow you to require everything.(css, html, images)
-        -works like gulp where loaders can be chained.
-        -preloaders - used as a means to run checks on types of files before you run through the beefier loader
-        -preload example would be to lint your js before you want to run the loaders
-        -preload only
-
+        -loaders: allow you to preprocess files as you require() or “load” them.</br>
+        -loaders: basically allow you to require everything.(css, html, images).</br>
+        -loaders: can transform files from different languages(Typescript to Javascript)(es6 to es5)</br>
+        -works like gulp where loaders can be chained.</br>
+        -preloaders - used as a means to run checks on types of files before you run through the beefier loader.</br>
+        -preload example would be to lint your js before you want to run the loaders or do image compression.</br>
+        -postloaders would be for code coverage instrumentation.</br>
     </aside>
 </section>
 

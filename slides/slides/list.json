@@ -8,16 +8,17 @@
         }
     },
     "agenda.md",
-    "what1.md",
     "why.md",
+    "what1.md",
+    "what1a.md",
     "what2.md",
     "config1.md",
     "config2.md",
     "config3.md",
     "config4.md",
+    "config4a.md",
     "config5.md",
     "config6.md",
-    "devtools.md",
     "dev-server1.md",
     "dev-server2.md",
     "dev-server3.md",
@@ -26,5 +27,6 @@
     "hmr2.md",
     "hmr3.md",
     "demo.md",
+    "wrapit.md",
     "outtahere.md"
 ]

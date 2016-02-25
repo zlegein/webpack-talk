@@ -1,9 +1,11 @@
 <section>
-    <h5>JSPM</h5>
-    <li>Built on top of SystemJS, same as ES6</li>
-    <li>Handles management of third-party dependencies directly</li>
+    <h5>Webpack 2</h5>
+    <div>Tree Shaking dead code elimination algorithm for ECMAScript 2015+</div>
+    <p></p>
+    <div>CommonJS Out, Native Imports In</div>
     <aside class="notes">
-        -so handles es6 code cleaner
-        -no need for npm install, reminds me of the maven days
+        -eliminates unused ES6 exports, even if its in the dependency graph.</br>
+        -one of the big hits from the JSPM world on webpack was that it couldn't handle native imports and had to convert to CommonJS.</br>
+        -which is big because Common JS leaves export references alive, so anything exported, used or not, is in your bundle.
     </aside>
 </section>

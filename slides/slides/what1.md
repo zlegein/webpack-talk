@@ -7,8 +7,8 @@
     <aside class="notes">
         -it collects a variety of web assets and packs them into a bundle that can be served to the client</br>
         -can completely replace grunt and gulp or used in conjunction</br>
-        -lots of configuration options that can seemingly handle anything you throw at it</br>
-        -big ones are loaders and plugins and we are going to take a look at one of the plugins
+        -lots of configuration options and we will dive into those</br>
+        -the main comparison that comes up is browserify</br>
     </aside>
 </section>
 

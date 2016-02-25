@@ -1,7 +1,6 @@
 <section>
-    <h5>Story Time</h5>
+    <h5>Let's Look at Code</h5>
     <aside class="notes">
-        -this is the unstructured part of the talk and what i would like to do is demo the app, show the HMR goodness
         -then dive into the configs and go through some more advanced settings and have a look at the structure.
         -Looking around, found webpack/angular/es6 workflow</br>
         -created by Jesus Rodriquez, as a starter for projects.</br>
