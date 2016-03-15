@@ -1,8 +1,8 @@
 ### Agenda
 ##### What
-    -what is webpack and where did it come from
+    What is webpack? Where did it come from?
 ##### Why
-    -yet another build tool? -comparisons
+    Yet another build tool? Comparisons
 ##### Configs
     -loaders, -plugins, -dev-server, -HMR -webpack2
 ##### Code Examples

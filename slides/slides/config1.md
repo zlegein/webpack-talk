@@ -3,7 +3,7 @@
 <pre>
 <span class="fragment">$ npm install webpack --save-dev</span>
 <span class="fragment">
-$ webpack --config webpack.config.js
+$ webpack <span class="fragment zoom-in highlight-current-green">--config</span> webpack.config.js
 
 module.exports = {
   // configuration
